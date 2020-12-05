@@ -1,17 +1,9 @@
 #!/bin/bash
 
-# create a system user for sinopia daemon
-sudo useradd -r sinopia
+curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-# install sinopia service
-sudo cp service/sinopia /etc/init.d/sinopia
-sudo chmod +x /etc/init.d/sinopia
-
-# config sinopia
-sudo mkdir /etc/sinopia
-sudo mkdir /etc/sinopia/storage
-sudo mv config.yaml /etc/sinopia/
-sudo chown sinopia:sinopia /etc/sinopia/ -R
-sudo chmod g+w /etc/sinopia/storage
-
-# sudo /etc/init.d/sinopia start
+npm config set registry https://registry.npm.taobao.org
+npm i -g yarn
+yarn config set registry https://registry.npm.taobao.org
+yarn global add sinopia
