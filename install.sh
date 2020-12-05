@@ -14,6 +14,4 @@ sudo mv config.yaml /etc/sinopia/
 sudo chown sinopia:sinopia /etc/sinopia/ -R
 sudo chmod g+w /etc/sinopia/storage
 
-
-
 # sudo /etc/init.d/sinopia start
