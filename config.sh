@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# create a system user for sinopia daemon
-sudo useradd -r sinopia
+# create a system user for verdaccio daemon
+sudo useradd -r verdaccio
 
-# install sinopia service
-sudo cp sinopia /etc/init.d/sinopia
-sudo chmod +x /etc/init.d/sinopia
+# install verdaccio service
+sudo cp verdaccio /etc/init.d/verdaccio
+sudo chmod +x /etc/init.d/verdaccio
 
-# config sinopia
-sudo mkdir /etc/sinopia
-sudo mkdir /etc/sinopia/storage
-sudo cp config.yaml /etc/sinopia/
-sudo chown sinopia:sinopia /etc/sinopia/ -R
-sudo chmod g+w /etc/sinopia/storage
+# config verdaccio
+sudo mkdir /etc/verdaccio
+sudo mkdir /etc/verdaccio/storage
+sudo cp config.yaml /etc/verdaccio/
+sudo chown verdaccio:verdaccio /etc/verdaccio/ -R
+sudo chmod g+w /etc/verdaccio/storage
 
-# sudo /etc/init.d/sinopia start
+# sudo /etc/init.d/verdaccio start
