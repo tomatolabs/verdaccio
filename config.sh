@@ -15,3 +15,4 @@ sudo chown verdaccio:verdaccio /etc/verdaccio/ -R
 sudo chmod g+w /etc/verdaccio/storage
 
 # sudo /etc/init.d/verdaccio start
+alias vnpm='sudo /etc/init.d/verdaccio'
