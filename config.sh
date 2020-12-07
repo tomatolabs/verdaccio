@@ -14,5 +14,5 @@ sudo cp config.yaml /etc/verdaccio/
 sudo chown verdaccio:verdaccio /etc/verdaccio/ -R
 sudo chmod g+w /etc/verdaccio/storage
 
-# sudo /etc/init.d/verdaccio start
+# sudo /etc/init.d/verdaccio start|stop|restart|status
 alias vnpm='sudo /etc/init.d/verdaccio'
