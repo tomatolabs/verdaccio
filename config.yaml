@@ -79,9 +79,9 @@ middlewares:
 logs:
   # - { type: stdout, format: pretty, level: http }
   - { type: file, path: /etc/verdaccio/verdaccio.log, level: info }
-#experiments:
-#  # support for npm token command
-#  token: false
+experiments:
+  # support for npm token command
+  token: true
 #  # support for the new v1 search endpoint, functional by incomplete read more on ticket 1732
 #  search: false
 #  # disable writing body size to logs, read more on ticket 1912
